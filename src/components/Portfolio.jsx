@@ -38,7 +38,7 @@ const Portfolio = () => {
     <>
       <div
         name="portfolio"
-        className="bg-gradient-to-b from-black to-blue-950 w-full text-white md:h-screen"
+        className="bg-gradient-to-b from-black to-blue-950 w-full text-white md:h-screen pb-5 pt-12"
       >
         <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
@@ -50,10 +50,7 @@ const Portfolio = () => {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
             {portfolios.map(({ id, src }) => (
-              <div
-                key={id}
-                className="shadow-md shadow-gray-600 rounded-lg hover:scale-105"
-              >
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                 <img
                   src={src}
                   alt=""

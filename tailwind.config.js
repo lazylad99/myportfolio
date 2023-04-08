@@ -5,9 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    // colors: {
-    //   crimson: '#B21031'
-    // }
+    fontFamily: {
+      signature: ['Teko'],
+    }
   },
   plugins: [],
 }
