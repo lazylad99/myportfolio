@@ -25,11 +25,6 @@ const Home = () => {
                   )
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString(
-                    "En route to becoming a proficient React Developer."
-                  )
-                  .pauseFor(1000)
-                  .deleteAll()
                   .typeString("Welcome To My Portfolio.")
                   .start();
               }}
