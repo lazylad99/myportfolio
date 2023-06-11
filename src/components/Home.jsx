@@ -1,7 +1,9 @@
 import React from "react";
-import heroImg from "../assets/heroImage.png";
+import heroImg from "../assets/dg.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
+import "../App.css";
 
 const Home = () => {
   return (
@@ -9,10 +11,29 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-blue-950 text-white "
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold ">
-            I'm a Full Stack Developer.
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-evenly h-full px-4 md:flex-row">
+        <div className="flex flex-col container justify-center h-full">
+          <h2 className="text-2xl sm:text-4xl sm:mt-3 sm:pb-0 font-bold ">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Hi, I'm Alok.")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString(
+                    "Embarking on the journey to become a Full Stack Web Developer."
+                  )
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString(
+                    "En route to becoming a proficient React Developer."
+                  )
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Welcome To My Portfolio.")
+                  .start();
+              }}
+            />
           </h2>
           <p className="text-gray-500 py-4 text-lg max-w-md">
             I graduated from BCA and am currently learning full-stack web
@@ -36,12 +57,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          <img
-            src={heroImg}
-            alt="my dp"
-            className="rounded-3xl mx-auto w-2/3 md:w-full"
-          />
+        <div className="container sm:mt-0" style={{ marginTop: "20px" }}>
+          <figure className="wave">
+            <img
+              src={heroImg}
+              alt="my dp"
+              className="rounded-3xl mx-auto w-2/3 md:w-full"
+            ></img>
+          </figure>
         </div>
       </div>
     </div>

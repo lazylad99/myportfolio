@@ -9,28 +9,33 @@ const About = () => {
       <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
-            About
+            About Me
           </p>
         </div>
 
         <p className=" text-xl mt-10 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          corporis odit natus ipsa commodi maiores modi laboriosam libero
-          suscipit. Ipsa eveniet perferendis iste dicta quidem autem tempora
-          voluptate numquam, facilis nisi veritatis vero laudantium error qui
-          repellat. Error quod exercitationem debitis, id maiores harum fugiat
-          nihil quos laboriosam nobis. Sed?
+          During my graduation, I discovered my passion for programming through
+          languages like C, C++, and Java. Afterward, I dived into web
+          development by taking a comprehensive full-stack development course on
+          Udemy. This allowed me to learn HTML, CSS, JavaScript, EJS, Node, and
+          Mongoose, providing a solid foundation in web technologies. To further
+          enhance my skills, I decided to explore React, a popular and
+          resource-rich framework. By learning React and the MERN stack
+          (MongoDB, Express, React, Node.js), I developed several projects that
+          strengthened my problem-solving abilities and honed my web development
+          expertise.
         </p>
 
         <br />
 
         <p className=" text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab
-          recusandae ducimus veniam odio alias porro iure atque molestiae quidem
-          temporibus nemo eos repudiandae officia est quia tempora explicabo
-          deserunt, et autem. Voluptate distinctio beatae facilis temporibus
-          nisi, autem possimus ratione, iusto fuga, rem odio natus illo expedita
-          rerum itaque?
+          These projects allowed me to apply my knowledge, improve my
+          problem-solving abilities, and gain hands-on experience in building
+          robust web applications. Now, I am venturing into the world of
+          freelancing, leveraging my skills and experience to create
+          high-quality web solutions for clients. I am excited about the
+          prospect of collaborating with individuals and organizations to bring
+          their ideas to life and deliver exceptional digital experiences.
         </p>
       </div>
     </div>

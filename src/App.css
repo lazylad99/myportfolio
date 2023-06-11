@@ -1,55 +1,75 @@
-/* ul {
-    padding: 0;
-    list-style-type: none;
+ul li {
+    padding: 0.25rem 0;
+    font-weight: 450;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.15rem solid transparent;
+    display: inline-block;
+    width: fit-content;
 }
 
-ul li {
-    box-sizing: border-box;
-    width: 10em;
-    height: 2em;
-    font-size: 20px;
-    border-radius: 0.5em;
-    margin: 0.5em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0, 2);
-    color: white;
-    text-transform: capitalize;
-    line-height: 3em;
-    transition: 0.3s;
+ul li:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* IMAGE FRAME */
+
+*/ .wave {
+    float: left;
+    margin: 20px;
+}
+
+.wave:hover {
+    animation: wave ease-in-out 0.7s infinite alternate;
+    transform-origin: center -36px;
     cursor: pointer;
 }
 
-ul li:nth-child(odd) {
-    background: linear-gradient(to right, black, rgb(32, 26, 88));
-    text-align: left;
-    padding-left: 10%;
-    transform: perspective(500px)rotatey(45deg);
+.wave img {
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 300px;
+    height: 300px;
 }
 
-ul li:nth-child(even) {
-    background: linear-gradient(to left, rgb(32, 26, 88), black);
-    text-align: right;
-    padding-left: 10%;
-    transform: perspective(500px)rotatey(-45deg);
+.wave figcaption {
+    text-align: center;
 }
 
-ul li:nth-child(odd):hover {
-    transform: perspective (200px) rotatey (45deg);
-    padding-left: 5%;
+.wave:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px;
+    left: 50%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(35deg);
 }
 
-ul li:nth-child(even):hover {
-    transform: perspective (200px) rotateY(-45deg);
-    padding-right: 5%;
-} */
+.wave:before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+}
 
-h1 {
-    background-image: linear-gradient(to right, rgb(88, 74, 216), rgb(178, 172, 230));
-    background-clip: text;
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: calc(1em / 16);
-    -webkit-background-clip: text;
-    color: #000119;
-    font-size: 10vmin;
-    font-weight: 700;
-    letter-spacing: calc(1em / 8);
+@keyframes wave {
+    0% {
+        transform: rotate(10deg);
+    }
+
+                100% {
+                    transform: rotate(-10deg);
+                }
 }
