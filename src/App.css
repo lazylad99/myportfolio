@@ -15,7 +15,7 @@ ul li:hover {
 
 /* IMAGE FRAME */
 
-*/ .wave {
+.wave {
     float: left;
     margin: 20px;
 }
@@ -69,7 +69,7 @@ ul li:hover {
         transform: rotate(10deg);
     }
 
-                100% {
-                    transform: rotate(-10deg);
-                }
+        100% {
+            transform: rotate(-10deg);
+        }
 }
