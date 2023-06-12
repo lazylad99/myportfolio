@@ -72,3 +72,9 @@ ul li:hover {
         }
 }
 
+@media (min-width: 768px) {
+    .wave img {
+        width: 300px;
+        height: 300px;
+    }
+}
