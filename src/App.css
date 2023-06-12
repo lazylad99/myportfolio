@@ -29,8 +29,6 @@ ul li:hover {
 .wave img {
     border: 5px solid #f8f8f8;
     display: block;
-    width: 300px;
-    height: 300px;
 }
 
 .wave figcaption {
@@ -73,3 +71,4 @@ ul li:hover {
             transform: rotate(-10deg);
         }
 }
+

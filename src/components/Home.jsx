@@ -12,7 +12,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-blue-950 text-white "
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-evenly h-full px-4 md:flex-row">
-        <div className="flex flex-col container justify-center h-full">
+        <div className="flex flex-col container justify-center h-full pt-14 lg:pt-0 mt-10 lg:mt-0">
           <h2 className="text-2xl sm:text-4xl sm:mt-3 sm:pb-0 font-bold ">
             <Typewriter
               onInit={(typewriter) => {
@@ -42,7 +42,7 @@ const Home = () => {
           <div>
             <Link
               to="portfolio"
-              className="group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer hover:scale-105 duration-300 "
+              className=" group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer hover:scale-105 duration-300 "
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -52,12 +52,15 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container sm:mt-0" style={{ marginTop: "20px" }}>
+        <div
+          className="flex flex-col container justify-center sm:mt-0 mb-0 lg:ml-14"
+          style={{ marginTop: "20px" }}
+        >
           <figure className="wave">
             <img
               src={heroImg}
               alt="my dp"
-              className="rounded-3xl mx-auto w-2/3 md:w-full"
+              className="rounded-3xl mx-auto w-2/3 h-40 w-40 md:h-72 md:w-72 md:w-full"
             ></img>
           </figure>
         </div>

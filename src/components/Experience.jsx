@@ -74,14 +74,14 @@ const Experience = () => {
       className="bg-gradient-to-b from-blue-950 to-black w-full h-fit pt-12"
     >
       <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-white">
-        <div className="pb-8">
+        <div className="pb-8 mt-6">
           <p className=" text-4xl font-bold inline border-b-4 border-gray-500 p-2">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with.</p>
         </div>
 
-        <div className=" w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center px-12 sm:px-0 sm:py">
+        <div className=" w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center px-12 sm:px-0 sm:py mt-5">
           {technologies.map(({ id, src, title, color }) => (
             <div
               key={id}

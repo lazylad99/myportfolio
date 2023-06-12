@@ -7,14 +7,14 @@ const Contact = () => {
       className=" w-full p-4 h-screen bg-gradient-to-b from-black to-blue-950 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className=" pb-8">
+        <div className=" pb-8 mt-14 md:mt-0">
           <p className=" text-4xl inline border-b-4 border-gray-500 font-bold">
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me.</p>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mb-8 md:md-0">
           <form
             action="https://getform.io/f/e5b22ab0-9fdb-4776-99a9-513d01c23789"
             method="POST"
